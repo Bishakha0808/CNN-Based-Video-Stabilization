@@ -11,6 +11,11 @@ A deep learning framework for video stabilization that combines **3D Convolution
 This project uses a hybrid loss function (Perceptual + Adversarial + Smoothness) to transform shaky, unstable footage into smooth, stable video clips.
 
 -----
+## Sample / Demo
+
+![Image](https://github.com/user-attachments/assets/8defa43c-eda4-4d91-82c9-8b47d4196048)
+
+-----
 
 ##  Key Features
 
@@ -115,7 +120,4 @@ This project implements `calculate_ssim_cropped`:
 2.  It calculates SSIM only on the center content.
 3.  This ensures the metric measures image quality, not border artifacts.
 
-## Sample / Demo
-
-![Image](https://github.com/user-attachments/assets/8defa43c-eda4-4d91-82c9-8b47d4196048)
 
