@@ -12,7 +12,7 @@ This project uses a hybrid loss function (Perceptual + Adversarial + Smoothness)
 
 -----
 
-## 🚀 Key Features
+##  Key Features
 
   * **Generator (StabGenerator):** A 3D CNN encoder-decoder architecture that predicts affine transformation matrices ($\theta$) for every frame in a clip.
   * **Differentiable Warping:** Uses PyTorch's `grid_sample` and `affine_grid` for end-to-end differentiable frame warping.
@@ -22,38 +22,22 @@ This project uses a hybrid loss function (Perceptual + Adversarial + Smoothness)
 
 -----
 
-## 📂 Project Structure
-
-The project relies on a specific dataset structure to pair "unstable" and "stable" videos automatically.
-
-```text
-├── train_full_pipeline.py    # Main training script
-├── README.md                 # Project Documentation
-└── dataset_root/             # Your Dataset Directory
-    ├── train/
-    │   ├── unstable/         # Input shaky videos (.mp4, .avi)
-    │   └── stable/           # Ground truth stable videos
-    └── test/                 # (Optional) Test set
-```
-
------
-
 ## ⚙️ Configuration
 
 You can tweak the training hyperparameters in the `CONFIG` dictionary located in the main script:
 
 | Parameter | Default | Description |
 | :--- | :--- | :--- |
-| `EPOCHS` | 200 | Total number of training passes. |
-| `BATCH_SIZE` | 2 | Number of clips per batch (keep low for 3D CNN memory usage). |
-| `CLIP_LEN` | 32 | Number of frames per video clip. |
-| `RESIZE` | (224, 224) | Input resolution for the model. |
-| `LR_G` | 1e-4 | Learning Rate for the Generator. |
-| `KAGGLE_ROOT` | `...` | Path to your dataset root directory. |
+| `EPOCHS` | 200 |
+| `BATCH_SIZE` | 2 | 
+| `CLIP_LEN` | 32 | 
+| `RESIZE` | (224, 224) | 
+| `LR_G` | 1e-4 | 
+| `KAGGLE_ROOT` | `...` |
 
 -----
 
-## 🧠 Model Architecture
+##  Model Architecture
 
 ### 1\. The Generator (StabGenerator)
 
