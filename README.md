@@ -85,8 +85,12 @@ pip install torch torchvision opencv-python numpy tqdm scikit-image
 
 <!-- end list -->
 
+
 ```bash
 python train_full_pipeline.py
+```
+```bash
+streamlit run your_app.py
 ```
 
 *Note: If no dataset is found, the script will automatically generate **dummy noise data** for debugging purposes.*
