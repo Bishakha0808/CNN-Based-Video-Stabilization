@@ -40,7 +40,7 @@ You can tweak the training hyperparameters in the `CONFIG` dictionary located in
 | `CLIP_LEN` | 32 | 
 | `RESIZE` | (224, 224) | 
 | `LR_G` | 1e-4 | 
-| `KAGGLE_ROOT` | `...` |
+| `ROOT` | `...` |
 
 -----
 
