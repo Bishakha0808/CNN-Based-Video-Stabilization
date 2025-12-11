@@ -21,6 +21,13 @@ This project uses a hybrid loss function (Perceptual + Adversarial + Smoothness)
   * **Smart Evaluation:** Includes a custom `SSIM (Cropped)` metric that evaluates structural similarity while ignoring black borders caused by stabilization warping.
 
 -----
+## Dataset 
+
+```
+https://www.kaggle.com/datasets/bishakhamondal/deepstab
+```
+
+-----
 
 ## ⚙️ Configuration
 
